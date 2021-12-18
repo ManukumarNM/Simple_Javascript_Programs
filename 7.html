@@ -1,0 +1,23 @@
+<?xml version="1.0''?>
+<!DOCTYPE html PUBLIC''-//W3C//DTD XHTML 1.0 Transitional//EN"
+ ''http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd''>
+<html xmlns=''http://www.w3.org/1999/xhtml''>
+<head>
+<title>Date Display</title>
+<script type="text/javascript">
+var days=["first","second","third","fourth","fifth","sixth","seventh""eighth",
+"ninth","tenth","eleventh","twelth","thirteenth","fourtheenth","fiftheenth",
+"sixtheenth","seventheenh","eihtheenth","ninetheenth","twenteenth","twentyfirst","twentysecond","twentythird","twentyfourth","twentyfifth","twentysixth","tw
+entyseventh","twentyeighth","twentyninth","thirtyeth","thirtfirst"];
+var months=["januvary","februvary","march","april","may","june",
+"july","agust","september","actober","november","desember"]
+var year="two thousnd fourteen";
+var dateObj=new Date();
+var cMonth=dateObj.getMonth();
+var cDate=dateObj.getDate();
+var cYear=dateObj.getFullYear();
+if(cYear==2014)
+alert("Today's Date is:"+days[currDate-1]+" "+months[currMonth]+ " "+year);
+else	
+alert("Today's Date is:"+days[cDate-1]+" "+months[cMonth]+ " "+cYear);
+</script></head></html>

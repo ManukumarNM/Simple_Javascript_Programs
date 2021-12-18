@@ -1,0 +1,30 @@
+<?xml version="1.0''?>
+<!DOCTYPE html PUBLIC''-//W3C//DTD XHTML 1.0 Transitional//EN"
+ ''http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd''>
+<html xmlns=''http://www.w3.org/1999/xhtml''>
+<head>
+<title>factorial of a Number</title>
+<script type="text/javascript">
+function findFactorial()
+{
+var num=window.prompt("Enter the value of N");
+var n=parseInt(num);
+window.alert("factorial of"+n+"is:"+fact(n));
+}
+function fact(n)
+{
+if(n==0)
+return 1;
+else
+return(n*fact(n-1));
+}
+</script>
+</head>
+<body>
+<form>
+
+<input type="button" value="find factorial of a number"
+onclick="findFactorial()" />
+</form>
+</body>
+</html>

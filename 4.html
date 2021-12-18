@@ -1,0 +1,40 @@
+<?xml version="1.0''?>
+<!DOCTYPE html PUBLIC''-//W3C//DTD XHTML 1.0 Transitional//EN"
+ ''http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd''>
+<html xmlns=''http://www.w3.org/1999/xhtml''>
+<head>
+<title>Basic Animation</title>
+<style type="text/css">
+#layer1
+{
+ position:absolute; top:50px; left:150px;
+}
+#layer2 
+{
+position:absolute; top:50px; left:150px;
+}
+#layer3
+{ 
+position:absolute; top:50px; left:150px;
+}
+</style>
+<script type="text/javascript">
+function moveImage(layer)
+{
+var top=window.prompt("Enter Top Value");
+
+var left=window.prompt("Enter Left Value");
+document.getElementById(layer).style.top=top+'px';
+document.getElementById(layer).style.left=left+'px';
+}
+</script>
+</head>
+<body>
+<div id="layer1"><img src="DSC01759.jpg" onclick="moveImage('layer1')" 
+alt="My Image" /></div>
+<div id="layer2"><img src="002.jpg" onclick="moveImage('layer2')"
+alt="My Image" /></div>
+<div id="layer3"><img src="002.jpg" onclick="moveImage('layer3')"
+alt="My Image" /></div>
+</body>
+</html>

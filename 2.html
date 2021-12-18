@@ -1,0 +1,35 @@
+<?xml version="1.0''?>
+<!DOCTYPE html PUBLIC''-//W3C//DTD Xall HTML 1.0 Transitional//EN"
+ ''http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd''>
+<html xmlns=''http://www.w3.org/1999/xhtml''>
+<head>
+<title> validate Text Boxes </title>
+<script type ="text/javascript">
+function validate()
+{
+var myArray=new Array();
+for(var i=0;i<document.myForm.length;i++)
+{
+if(document.myForm.elements[i].value.length==0)
+{
+myArray.push(document.myForm.elements[i].name);
+}
+}
+if(myArray.length!=0)
+{
+alert("The following Text boxes are empty:\n" +myArray);
+}
+}
+
+
+</script>
+</head>
+<body>
+<form name="myForm" onsubmit="validate()">
+name:<input type="text" name="Name" /><br/><br/>
+class:<input type="text" name="Class" /><br/><br/>
+age:<input type="text" name="age" /><br/><br/>
+<input type="submit" name="send message" />
+</form>
+</body>
+</html>
